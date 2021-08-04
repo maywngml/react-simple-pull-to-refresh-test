@@ -1,0 +1,81 @@
+{
+  "_from": "react-simple-pull-to-refresh@^1.2.3",
+  "_id": "react-simple-pull-to-refresh@1.2.3",
+  "_inBundle": false,
+  "_integrity": "sha512-GH4dJn3954IavyOg6rkF00LPqr2lG0DzLNGMhTYXDaOP5mjAduW3TCThexExS/sDWrRpN37IU8gzaimCvUse+w==",
+  "_location": "/react-simple-pull-to-refresh",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-simple-pull-to-refresh@^1.2.3",
+    "name": "react-simple-pull-to-refresh",
+    "escapedName": "react-simple-pull-to-refresh",
+    "rawSpec": "^1.2.3",
+    "saveSpec": null,
+    "fetchSpec": "^1.2.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-simple-pull-to-refresh/-/react-simple-pull-to-refresh-1.2.3.tgz",
+  "_shasum": "e2fc67ba25e688c9866670e08c455ebc464f497f",
+  "_spec": "react-simple-pull-to-refresh@^1.2.3",
+  "_where": "C:\\Users\\owner",
+  "author": {
+    "name": "Guibert Thomas"
+  },
+  "bugs": {
+    "url": "https://github.com/thmsgbrt/react-simple-pull-to-refresh/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A Simple Pull To Refresh Component for React Application",
+  "devDependencies": {
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.25.0",
+    "rollup-plugin-delete": "^1.1.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "3.7.5"
+  },
+  "files": [
+    "build"
+  ],
+  "homepage": "https://github.com/thmsgbrt/react-simple-pull-to-refresh#readme",
+  "keywords": [
+    "react",
+    "pull to refresh",
+    "js",
+    "mobile"
+  ],
+  "license": "MIT",
+  "main": "build/index.cjs.js",
+  "module": "build/index.esm.js",
+  "name": "react-simple-pull-to-refresh",
+  "peerDependencies": {
+    "react": "^16.10.2 || ^17.0.0",
+    "react-dom": "^16.10.2 || ^17.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thmsgbrt/react-simple-pull-to-refresh.git"
+  },
+  "scripts": {
+    "build": "rollup -c && cd playground && npm run build && cd ../ && ncp ./playground/build ./docs",
+    "build-watch": "rollup -c -w",
+    "dev": "npm-run-all --parallel build-watch start-playground",
+    "i-all": "npm i && cd playground && npm i",
+    "start-playground": "cd playground && npm run start"
+  },
+  "typings": "build/index.d.ts",
+  "version": "1.2.3"
+}
